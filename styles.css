@@ -1,43 +1,45 @@
+/* Estilo para el elemento body de la página. */
 body {
-    background-color: black;
+    background-color: black; /* Establece el color de fondo del cuerpo a negro. */
 }
 
+/* Estilo para los encabezados de nivel 1 (h1). */
 h1 {
-    color: white; 
-    text-align: center;
+    color: white; /* Establece el color del texto a blanco. */
+    text-align: center; /* Centra el texto horizontalmente. */
 }
 
+/* Estilo para los inputs que están dentro de un elemento td (celda de tabla). */
 td input {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima. */
 }
 
+/* Estilo para los encabezados de nivel 3 (h3). */
 h3 {
-    color: white;    
+    color: white; /* Establece el color del texto a blanco. */
 }
 
+/* Estilo para los elementos con la clase "text_input". */
 .text_input {
-    width: 500px;
+    width: 500px; /* Establece el ancho del elemento a 500 píxeles. */
 }
 
+/* Estilo para los elementos con la clase "container". */
 .container {
-background-color: gray;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 40vh; /* Esto hace que el cuerpo llene la vista del puerto */
-width: 40vh;
-border-radius: 100px;
-margin-left: 25%;
+    background-color: gray; /* Establece el color de fondo a gris. */
+    display: flex; /* Establece el modelo de caja a flexbox. */
+    justify-content: center; /* Centra los elementos hijos horizontalmente. */
+    align-items: center; /* Centra los elementos hijos verticalmente. */
+    height: 40vh; /* Establece la altura del contenedor al 40% de la altura de la ventana del navegador. */
+    width: 40vh; /* Establece el ancho del contenedor al 40% de la altura de la ventana del navegador. */
+    border-radius: 100px; /* Redondea las esquinas del contenedor. */
+    margin-left: 25%; /* Añade un margen a la izquierda del contenedor. */
 } 
 
+/* Estilo para los elementos con la clase "column". */
 .column {
-flex: 1;
-border: 1px solid black;
-padding: 10px;
-margin: 10px;
-}
-
-.footer {
-margin-left: auto;
-margin-right: 0;
+    flex: 1; /* Establece la capacidad de crecimiento y encogimiento del elemento a 1, permitiendo que ocupe el espacio disponible. */
+    border: 1px solid black; /* Añade un borde de 1 píxel de ancho, sólido y negro alrededor del elemento. */
+    padding: 10px; /* Añade un relleno de 10 píxeles alrededor del contenido del elemento. */
+    margin: 10px; /* Añade un margen de 10 píxeles alrededor del elemento. */
 }
