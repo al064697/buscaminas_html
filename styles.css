@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white; 
+    text-align: center;
+}
+
+td input {
+    cursor: pointer;
+}
+
+h3 {
+    color: white;    
+}
+
+.text_input {
+    width: 500px;
+}
+
+.container {
+background-color: gray;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40vh; /* Esto hace que el cuerpo llene la vista del puerto */
+width: 40vh;
+border-radius: 100px;
+margin-left: 25%;
+} 
+
+.column {
+flex: 1;
+border: 1px solid black;
+padding: 10px;
+margin: 10px;
+}
+
+.footer {
+margin-left: auto;
+margin-right: 0;
+}

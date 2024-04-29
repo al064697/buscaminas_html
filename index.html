@@ -1,0 +1,506 @@
+<!DOCTYPE html> <!--Funciona como instrucción para el navegador web sobre que versión de HTML utilizar-->
+<html lang="en"> <!--Es la raíz de todo el documento HTML y en ella establecí el lenguaje de la website en inglés-->
+<head> <!--Metadatos-->
+    <meta charset="UTF-8"> <!--Establece el metadato UTF-8 (qué es el más común en cualquier website)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Controla el diseño en dispositivos móviles-->
+    <title>Minesweeper</title> <!--Se muestra el título de la página en la pestaña de la página-->
+    <link rel="stylesheet" href="styles.css"> <!--Enlaza documentos eexternos al documento HTML, en este caso se utilizo para importar una hoja de estilos CSS-->
+</head>
+<body> <!--Es el cuerpo del documento HTML-->
+    <header>  <!--Es la sección de encabezado del cuerpo del documento HTML, en ella se puede encontrar el titulo, diversos menus, etc-->
+        <h1 >Minesweeper </h1>  <!--encabezado de tipo H1, utilizado mayormente para darle título al contenido de la página,. Abajo del H1 (H2,3,4...) ya son subtitulos-->
+        <form> <!--Crea un formulario para entrada de datos del usuario-->
+            <table> <!--Crea un apartado de tabla con el cual podemos ir añadiendo columnas, filas y celdas-->
+                <tr> <!--añade nueva fila a la tabla-->
+                    <td> <!--añade nuevo dato (celda) a la tabla-->
+                        <h3>Enter your username</h3> <!--Subtitulo de tamaño H3-->
+                    </td> 
+                    <td>
+                        <input class="text_input" type="text" > <!--Crea una entrada de datos de tipo texto y la clase aliviana su manipulación el la hoja CSS-->
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Enter the number of mines</h3></td>
+                    <td><input class="text_input" type="text"></td>
+                </tr>
+            </table>
+        </form>
+    </header>
+    <br><br><br><br> <!--Es el equivalente al \n de los lenguajes de programación. Es un breakline (salto de linea)-->
+    <form>
+        <table class="container"> 
+            <tr>
+                <td>
+                    <input type="submit"  value="hola"> <!--Es una entrada de dato de tipo push-button cuyo contenido es =""-->
+                </td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit"  value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+                <td><input type="submit" value=""></td>
+            </tr>
+        </table>
+    </form>
+    <br><br><br><br>
+    <footer> <!--Define el pie de página del cuerpo del documento HTML-->
+        <table class="footer">
+            <tr>
+                <td><h3>Score: </h3></td>
+                <td><input type="text" value="0 pts"></td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html> <!--Recuerda cerrar toda etiqueta para un mejor funcionamiento de la website (y también para una buena práctica)-->
